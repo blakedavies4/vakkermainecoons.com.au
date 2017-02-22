@@ -61,8 +61,8 @@
 <!-- JAVASCRIPT -->
 
 	<!-- Page Loader -->
-  
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
   	<script type="text/javascript">
     	$(window).load(function() {
@@ -128,7 +128,6 @@
 <body class="no-touch">
 
 <div class="loader"></div>
-
 
 <section id="home">
 
@@ -274,15 +273,15 @@
 			<h3>More litters planned throughout 2017.</h3>
 		</div>
 
-		<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSehItCBxxXwyzSVhB35Ao9Zkl9G0vDtSEzlR8zknRQWFtp9dw/formResponse">
+		<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSee1Bf1d0wc1Tf1KEGlhz1QfsjPlvl9AQXcP3Kh3hap2Y5d1w/formResponse">
 			<div class="rwd-form-break">
-    		<input class="name" name="entry.558223707" id="entry.558223707" placeholder="Name" required>
-    		<input class="phone" name="entry.877542590" id="entry.877542590" placeholder="Phone" required>
-    		<input class="email" name="entry.1596190029" id="entry.1596190029" type="email" placeholder="Email" required>
+    		<input class="name" name="entry.964404255" id="entry.964404255" placeholder="Name" required>
+    		<input class="phone" name="entry.1746118319" id="entry.1746118319" placeholder="Phone" required>
+    		<input class="email" name="entry.1446051180" id="entry.1446051180" type="email" placeholder="Email" required>
 			</div>
 
 			<div class="rwd-form-break">
-    		<textarea name="entry.1268288448" id="entry.1268288448" placeholder="Message" required></textarea>
+    		<textarea name="entry.461476100" id="entry.461476100" placeholder="Message" required></textarea>
 			</div>
     	<input class="submit" name="submit" type="submit" value="Send Message">
   	</form>
@@ -291,7 +290,7 @@
 	    $('#gform').submit(function(e) {
 	      e.preventDefault();
 	      $.ajax({
-	        url: "https://docs.google.com/forms/d/e/1FAIpQLSehItCBxxXwyzSVhB35Ao9Zkl9G0vDtSEzlR8zknRQWFtp9dw/formResponse",
+	        url: "https://docs.google.com/forms/d/e/1FAIpQLSee1Bf1d0wc1Tf1KEGlhz1QfsjPlvl9AQXcP3Kh3hap2Y5d1w/formResponse",
 	        data: $(this).serialize(),
 	        type: "POST",
 	        dataType: "xml",
@@ -323,7 +322,19 @@
 		<a href="#home">
 			<h1><span>Vakker</span> <br/>Maine Coons</h1>
 		</a>
+		<a href="https://www.instagram.com/vakkermainecoons/?hl=en" target="blank">
+			<img src="img/instagram_icon.png" alt="blakedavies.net"/>
+			<p>Follow us on Instagram!</p>
+		</a>
 	</footer>
+	<div class="powered-by">
+		<a href="http://blakedavies.net" target="blank">
+			<p>Website built & powered by </p>
+			<img src="img/LOGO - 150x150.png" alt="blakedavies.net"/>
+			<h3>Blake Davies</h3>
+		</a>
+		<p>&#169 2017 Blake Davies. All Rights Reserved.</p>
+	</div>
 
 </section>
 
