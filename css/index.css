@@ -9,6 +9,24 @@
 	       url('../fonts/Artifika/Artifika-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
 	       url('../fonts/Artifika/Artifika-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
 	}
+	@font-face {
+	  font-family:'Bebas';
+	  src: url('../fonts/Bebas/Bebas.eot'); /* IE9 Compat Modes */
+	  src: url('../fonts/Bebas/Bebas.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	       url('../fonts/Bebas/Bebas.woff2') format('woff2'), /* Super Modern Browsers */
+	       url('../fonts/Bebas/Bebas.woff') format('woff'), /* Pretty Modern Browsers */
+	       url('../fonts/Bebas/Bebas.ttf')  format('truetype'), /* Safari, Android, iOS */
+	       url('../fonts/Bebas/Bebas.svg#svgFontName') format('svg'); /* Legacy iOS */
+	}
+	@font-face {
+  	font-family:'Quicksand';
+  	src: url('../fonts/Quicksand/Quicksand-Regular.eot'); /* IE9 Compat Modes */
+  	src: url('../fonts/Quicksand/Quicksand-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  	     url('../fonts/Quicksand/Quicksand-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+  	     url('../fonts/Quicksand/Quicksand-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+  	     url('../fonts/Quicksand/Quicksand-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  	     url('../fonts/Quicksand/Quicksand-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+	}
 
 /* STANDARD CSS */
 
@@ -471,6 +489,7 @@
 /* FOOTER */
 
 	#footer footer {
+		text-align:center;
 	  -webkit-box-shadow:0px 0px 1vmin 0.35vmin rgb(75,75,75);
        -moz-box-shadow:0px 0px 1vmin 0.35vmin rgb(75,75,75);
          -o-box-shadow:0px 0px 1vmin 0.35vmin rgb(75,75,75);
@@ -482,7 +501,6 @@
 	#footer footer a h1 {
 		margin:0;
 		font-family:'Artifika';
-		text-align:center;
 		color:rgb(240,140,200);
 		font-size:3.25vmin;
 		letter-spacing:0.75vw;
@@ -492,6 +510,49 @@
 		font-size:6.5vmin;
 		letter-spacing:2vw;
 		padding-left:2vw;
+	}
+	#footer footer a img {
+		margin-top:5vmin;
+		height:auto;
+		width:6vmin;
+	}
+	#footer footer a p {
+		font-family:'Artifika';
+		color:rgb(240,140,200);
+		font-size:1.5vmin;
+	}
+	#footer div.powered-by {
+		text-align:center;
+		padding:2vmin;
+		background-color:rgb(255,255,255)
+	}
+	#footer div.powered-by a {
+		color:rgb(25,27,29);
+		display:block;
+	}
+	#footer div.powered-by a p {
+		font-size:2vmin;
+		font-family:'Quicksand';
+		color:rgb(25,27,29);
+		margin:0;
+		margin-bottom:0.5vmin;
+	}
+	#footer div.powered-by a img {
+		height:auto;
+		width:2.5vmin;
+	}
+	#footer div.powered-by a h3 {
+		font-size:1.25vmin;
+		font-family:'Bebas';
+		margin:0;
+		display:inline-block;
+		letter-spacing:0.5vw;
+		padding-left:0.5vw;
+	}
+	#footer div.powered-by p {
+		font-size:1.5vmin;
+		font-family:'Quicksand';
+		color:rgb(25,27,29);
 	}
 
 /* MEDIA QUERIES */
