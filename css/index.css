@@ -1,0 +1,532 @@
+/* FONTS */
+
+	@font-face {
+	  font-family:'Artifika';
+	  src: url('../fonts/Artifika/Artifika-Regular.eot'); /* IE9 Compat Modes */
+	  src: url('../fonts/Artifika/Artifika-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	       url('../fonts/Artifika/Artifika-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+	       url('../fonts/Artifika/Artifika-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+	       url('../fonts/Artifika/Artifika-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+	       url('../fonts/Artifika/Artifika-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+	}
+
+/* STANDARD CSS */
+
+	* {
+	  -webkit-box-sizing:border-box;
+  	   -moz-box-sizing:border-box;
+    	   -o-box-sizing:border-box;
+    	  -ms-box-sizing:border-box;
+      	    box-sizing:border-box;
+	}
+	body {
+	  overflow-x:hidden;
+	  margin:0;
+	  padding:0;
+	}
+	a {
+		text-decoration:none;
+	}
+	.anchor {
+  		display: block;
+  		height:26vmin;
+  		margin-top:-26vmin;
+  }
+
+/* PAGE LOADER */
+
+	.loader {
+	  -webkit-position: fixed;
+	     -moz-position: fixed;
+	       -o-position: fixed;
+	      -ms-position: fixed;
+	          position: fixed;
+	  left:0px;
+	  top:0px;
+	  width:100%;
+	  height:100%;
+	  -webkit-z-index: 9999;
+	     -moz-z-index: 9999;
+	       -o-z-index: 9999;
+	      -ms-z-index: 9999;
+	          z-index: 9999;
+		background: url('../img/paw_print.png') 50% 50% no-repeat rgb(255,255,255);
+	}
+
+/* FIXED HEADER */
+
+	#home header {
+				
+	}
+	#home header div.fixed-header {
+		background-color:rgb(80,40,65);
+		-webkit-z-index:999;
+	     -moz-z-index:999;
+	       -o-z-index:999;
+	      -ms-z-index:999;
+	          z-index:999;
+	  -webkit-position:fixed;
+	     -moz-position:fixed;
+	       -o-position:fixed;
+	      -ms-position:fixed;
+	          position:fixed;
+	  width:100%;
+	  padding:2.5vmin;
+	  -webkit-box-shadow:0px 0px 1vmin 0.35vmin rgb(75,75,75);
+       -moz-box-shadow:0px 0px 1vmin 0.35vmin rgb(75,75,75);
+         -o-box-shadow:0px 0px 1vmin 0.35vmin rgb(75,75,75);
+        -ms-box-shadow:0px 0px 1vmin 0.35vmin rgb(75,75,75);
+            box-shadow:0px 0px 1vmin 0.35vmin rgb(75,75,75);
+	}
+	#home header div.fixed-header a h1 {
+		margin:0;
+		font-family:'Artifika';
+		text-align:center;
+		color:rgb(240,140,200);
+		font-size:6.5vmin;
+		letter-spacing:1.25vw;
+		padding-left:1.25vw;
+	}
+	#home header div.fixed-header a h1 span {
+		font-size:11vmin;
+		letter-spacing:4vw;
+		padding-left:4vw;
+	}
+	#home header nav {
+		text-align:center;
+		background-color:rgb(215,215,215);
+		padding:2vmin;
+	}
+	#home header nav a {
+		color:rgb(0,0,0);
+		display:inline-block;
+		padding-left:3.5vmin;
+		padding-right:3.5vmin;
+	  -webkit-transition: all 0.15s ease;
+	     -moz-transition: all 0.15s ease;
+	       -o-transition: all 0.15s ease;
+	      -ms-transition: all 0.15s ease;
+	          transition: all 0.15s ease;
+	}
+	#home header nav a:hover {
+		color:rgb(240,140,200);
+	  -webkit-transform: scale(1.05);
+	     -moz-transform: scale(1.05);
+	      -ms-transform: scale(1.05);
+	       -o-transform: scale(1.05);
+	          transform: scale(1.05);			
+	}
+	html.can-touch #home header nav a:hover {
+		color:rgb(0,0,0);
+	  -webkit-transform: scale(1);
+	     -moz-transform: scale(1);
+	      -ms-transform: scale(1);
+	       -o-transform: scale(1);
+	          transform: scale(1);			
+	}
+	#home header nav a img {
+		height:auto;
+		width:5vmin;
+	}
+	#home header nav a p {
+		display:inline-block;
+		font-family:'Artifika';
+		font-size:3vmin;
+		vertical-align:1.5vmin;
+	}
+	#home div.header-spacer {
+		padding:2.5vmin;
+	}
+	#home div.header-spacer h1 {
+		font-family:'Artifika';
+		text-align:center;
+		color:rgb(240,140,200);
+		font-size:6.5vmin;
+		letter-spacing:1.25vw;
+		padding-left:1.25vw;
+		margin:0;
+	}
+	#home div.header-spacer h1 span {
+		font-size:11vmin;
+		letter-spacing:4vw;
+		padding-left:4vw;
+	}
+	#home div.impact {
+	  -webkit-box-shadow:0px 1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset,
+	  									 0px -1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset;
+       -moz-box-shadow:0px 1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset,
+	  									 0px -1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset;
+         -o-box-shadow:0px 1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset,
+	  									 0px -1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset;
+        -ms-box-shadow:0px 1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset,
+	  									 0px -1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset;
+            box-shadow:0px 1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset,
+	  									 0px -1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset;
+		padding:7.5vmin;
+		text-align:center;
+	}
+	#home div.impact img {
+		height:auto;
+		width:25vmin;
+	}
+	#home div.impact h3 {
+		margin:0;
+		font-family:'Artifika';
+		font-size:5vmin;
+	}
+	#home div.impact a {
+		font-family:'Artifika';
+		text-align:center;
+  	background-color:rgb(240,140,200);
+  	padding:2.5vmin;
+  	margin-top:5vmin;
+  	display:inline-block;
+  	font-size:3vmin;
+  	color:rgb(0,0,0);
+  	text-decoration:none;
+	  -webkit-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(125,125,125);
+       -moz-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(125,125,125);
+         -o-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(125,125,125);
+        -ms-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(125,125,125);
+            box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(125,125,125);	
+	  -webkit-transition: all 0.15s ease;
+	     -moz-transition: all 0.15s ease;
+	       -o-transition: all 0.15s ease;
+	      -ms-transition: all 0.15s ease;
+	          transition: all 0.15s ease;
+	}
+	#home div.impact a:hover {
+	  -webkit-transform: scale(1.05);
+	     -moz-transform: scale(1.05);
+	      -ms-transform: scale(1.05);
+	       -o-transform: scale(1.05);
+	          transform: scale(1.05);			
+	}
+	html.can-touch #home div.impact a:hover {
+	  -webkit-transform: scale(1);
+	     -moz-transform: scale(1);
+	      -ms-transform: scale(1);
+	       -o-transform: scale(1);
+	          transform: scale(1);			
+	}
+
+/* ABOUT */
+
+	#about div.gallery {
+		font-size:0;
+		text-align:center;
+	}
+	#about div.gallery img {
+		height:25vw;
+		width:25%;
+	}
+	#about div.container {
+		padding:1vmin;
+		background-image:url("../img/ep_naturalwhite.png");
+		text-align:center;
+	}
+	#about div.container div.wrapper {
+		padding-left:10%;
+		padding-right:10%;
+	}
+	#about div.container div.wrapper h3 {
+		text-align:center;
+		font-family:'Artifika';
+		font-size:4vmin;
+	}
+	#about div.container div.wrapper p {
+		text-align:justify;
+		font-family:'Artifika';
+		font-size:3vmin;
+	}
+	#about div.container div.spacer {
+		height:1vmin;
+	}
+
+/* PRICING */
+
+	#pricing div.inset {
+		padding:2vmin;
+		text-align:center;
+	  -webkit-box-shadow:0px 1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset,
+	  									 0px -1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset;
+       -moz-box-shadow:0px 1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset,
+	  									 0px -1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset;
+         -o-box-shadow:0px 1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset,
+	  									 0px -1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset;
+        -ms-box-shadow:0px 1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset,
+	  									 0px -1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset;
+            box-shadow:0px 1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset,
+	  									 0px -1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset;
+	}
+	#pricing div.inset img {
+		margin-top:2.5vmin;
+		height:auto;
+		width:25%;
+	}
+	#pricing table {
+		width:100%;
+		padding:2vmin;
+	}
+	#pricing table tr {
+		background-color:rgb(235,235,235);
+	}
+	#pricing table tr:nth-child(4), #pricing table tr:nth-child(5) {
+		background-color:rgb(215,215,215);
+	}
+	#pricing table tr th {
+		background-color:rgb(240,140,200);
+		text-align:center;
+		font-family:'Artifika';
+		font-size:4vmin;
+		padding:2vmin;
+	}
+	#pricing table tr td {
+		text-align:center;
+		font-family:'Artifika';
+		font-size:3vmin;
+		padding:2vmin;
+	}
+	#pricing table tr:nth-child(3) td {
+		text-align:justify;
+		font-size:2.5vmin;
+		font-style:italic;
+	}
+	#pricing table tr:nth-child(4) td, #pricing table tr:nth-child(5) td {
+		font-size:3vmin;
+	}
+
+/* CONTACT */
+
+	#contact div.gallery {
+		font-size:0;
+		text-align:center;
+	}
+	#contact div.gallery img {
+		height:25vw;
+		width:25%;
+	}
+	#contact .contact-container {
+		padding:2.5vmin;
+		background-color:rgb(215,215,215);
+		text-align:center;
+	}
+	#contact .contact-container h3 {
+		padding-left:20%;
+		padding-right:20%;
+		font-family:'Artifika';
+		color:rgb(0,0,0);
+		font-size:4vmin;		
+	}
+	#contact .contact-container p {
+		padding-left:15%;
+		padding-right:15%;
+		font-family:'Artifika';
+		color:rgb(0,0,0);
+		font-size:3vmin;
+	}
+	#contact form {
+		margin-bottom:5vmin;
+		padding-left:10%;
+		padding-right:10%;
+	}
+	#contact form input.name, #contact form input.phone, #contact form input.email {
+		margin-bottom:2.5vmin;
+		width:100%;
+		font-family:'Artifika'; 
+  	font-size:3vmin;
+  	background-color:rgb(240,140,200);
+  	color:rgb(0,0,0);
+  	padding:2.5vmin;
+  	text-decoration:none; 
+  	display:inline-block;
+		border:0.25vmin solid rgb(240,140,200);
+	  -webkit-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(0,0,0);
+       -moz-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(0,0,0);
+         -o-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(0,0,0);
+        -ms-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(0,0,0);
+            box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(0,0,0);	
+	  -webkit-transition: all 0.15s ease;
+	     -moz-transition: all 0.15s ease;
+	       -o-transition: all 0.15s ease;
+	      -ms-transition: all 0.15s ease;
+	          transition: all 0.15s ease;	
+	}
+	#contact form input.name:focus, #contact form input.phone:focus, #contact form input.email:focus {
+	  -webkit-transform: scale(1.05);
+	     -moz-transform: scale(1.05);
+	      -ms-transform: scale(1.05);
+	       -o-transform: scale(1.05);
+	          transform: scale(1.05);
+	}
+	#contact form textarea {
+		height:25vmin;
+		width:100%;
+		font-family:'Artifika'; 
+  	font-size:3vmin;
+  	background-color:rgb(240,140,200);
+  	color:rgb(0,0,0);
+  	padding:2.5vmin;
+  	text-decoration:none; 
+  	display:inline-block;
+		border:0.25vmin solid rgb(240,140,200);
+	  -webkit-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(0,0,0);
+       -moz-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(0,0,0);
+         -o-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(0,0,0);
+        -ms-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(0,0,0);
+            box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(0,0,0);
+	  -webkit-transition: all 0.15s ease;
+	     -moz-transition: all 0.15s ease;
+	       -o-transition: all 0.15s ease;
+	      -ms-transition: all 0.15s ease;
+	          transition: all 0.15s ease;	
+	}
+	#contact form textarea:focus {
+	  -webkit-transform: scale(1.05);
+	     -moz-transform: scale(1.05);
+	      -ms-transform: scale(1.05);
+	       -o-transform: scale(1.05);
+	          transform: scale(1.05);
+	}
+	#contact form input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:rgb(0,0,0);
+	}
+	#contact form input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:rgb(0,0,0);
+    opacity:  1;
+	}
+	#contact form input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:rgb(0,0,0);
+    opacity:  1;
+	}
+	#contact form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:rgb(0,0,0);
+	}
+	#contact form textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:rgb(0,0,0);
+	}
+	#contact form textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:rgb(0,0,0);
+    opacity:  1;
+	}
+	#contact form textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:rgb(0,0,0);
+    opacity:  1;
+	}
+	#contact form textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:rgb(0,0,0);
+	}	
+	#contact form input.submit {
+		margin-top:5vmin;
+		cursor:pointer;
+		font-family:'Artifika'; 
+  	font-size:3vmin;
+  	background-color:rgb(240,140,200);
+  	color:rgb(0,0,0);
+  	padding:2.5vmin;
+  	text-decoration:none; 
+  	display:inline-block;
+		border:0.25vmin solid rgb(240,140,200);
+	  -webkit-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(0,0,0);
+       -moz-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(0,0,0);
+         -o-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(0,0,0);
+        -ms-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(0,0,0);
+            box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(0,0,0);
+	  -webkit-transition: all 0.15s ease;
+	     -moz-transition: all 0.15s ease;
+	       -o-transition: all 0.15s ease;
+	      -ms-transition: all 0.15s ease;
+	          transition: all 0.15s ease;
+	}
+	#contact form input.submit:hover {
+	  -webkit-transform: scale(1.05);
+	     -moz-transform: scale(1.05);
+	      -ms-transform: scale(1.05);
+	       -o-transform: scale(1.05);
+	          transform: scale(1.05);			
+	}
+	html.can-touch #contact form input.submit:hover {
+	  -webkit-transform: scale(1);
+	     -moz-transform: scale(1);
+	      -ms-transform: scale(1);
+	       -o-transform: scale(1);
+	          transform: scale(1);			
+	}
+	#contact h3.thank-you {
+		margin-top:5vmin;
+		margin-bottom:2.5vmin;
+		font-family:'Artifika';
+		color:rgb(0,0,0);
+		font-size:4vmin;		
+	}
+	#contact p.thank-you {
+		padding-left:10%;
+		padding-right:10%;
+		font-family:'Artifika';
+		color:rgb(0,0,0);
+		font-size:3vmin;
+		margin-bottom:7.5vmin
+	}
+
+/* FOOTER */
+
+	#footer footer {
+	  -webkit-box-shadow:0px 0px 1vmin 0.35vmin rgb(75,75,75);
+       -moz-box-shadow:0px 0px 1vmin 0.35vmin rgb(75,75,75);
+         -o-box-shadow:0px 0px 1vmin 0.35vmin rgb(75,75,75);
+        -ms-box-shadow:0px 0px 1vmin 0.35vmin rgb(75,75,75);
+            box-shadow:0px 0px 1vmin 0.35vmin rgb(75,75,75);
+		padding:2vmin;
+		background-color:rgb(45,45,45);
+	}
+	#footer footer a h1 {
+		margin:0;
+		font-family:'Artifika';
+		text-align:center;
+		color:rgb(240,140,200);
+		font-size:3.25vmin;
+		letter-spacing:0.75vw;
+		padding-left:0.75vw;
+	}
+	#footer footer a h1 span {
+		font-size:6.5vmin;
+		letter-spacing:2vw;
+		padding-left:2vw;
+	}
+
+/* MEDIA QUERIES */
+
+	@media only screen and (min-width:1350px) {
+		.anchor {
+  		display: block;
+  		height:18vmin;
+  		margin-top:-18vmin;
+  	}
+  	#home header div.fixed-header a h1 span {
+			letter-spacing:2.5vw;
+			padding-left:2.5vw;
+		}
+		#home header div.fixed-header a br {
+			display:none;
+		}
+		#home header div.header-spacer h1 span {
+			letter-spacing:2.5vw;
+			padding-left:2.5vw;
+		}
+		#home header div.header-spacer br {
+			display:none;
+		}
+	}
+
+	@media screen and (min-aspect-ratio: 5/4) {
+		#about div.container div.wrapper {
+			vertical-align:top;
+			display:inline-block;
+			width:30%;
+			padding-left:1%;
+			padding-right:1%;
+		}
+		#about div.container div.spacer {
+			display:none;
+		}
+	}
