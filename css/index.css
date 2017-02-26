@@ -170,7 +170,7 @@
 		padding-left:4vw;
 	}
 	#home div.impact {
-		background-color:rgb(255,255,255)
+		background-color:rgb(255,255,255);
 	  -webkit-box-shadow:0px 1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset,
 	  									 0px -1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset;
        -moz-box-shadow:0px 1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset,
@@ -265,7 +265,7 @@
 /* PRICING */
 
 	#pricing div.inset {
-		background-color:rgb(255,255,255)
+		background-color:rgb(255,255,255);
 		padding:2vmin;
 		text-align:center;
 	  -webkit-box-shadow:0px 1vmin 1.25vmin -0.5vmin rgb(125,125,125) inset,
